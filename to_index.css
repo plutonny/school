@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+}
+
+.all_display {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  -moz-transition: background-color 0.8s cubic-bezier(0.69, 0.07, 0.35, 0.95);
+  -o-transition: background-color 0.8s cubic-bezier(0.69, 0.07, 0.35, 0.95);
+  -webkit-transition: background-color 0.8s cubic-bezier(0.69, 0.07, 0.35, 0.95);
+}
+
+.all_display:hover {
+  background-color: darkgray;
+  animation-fill-mode: backwards;
+}
