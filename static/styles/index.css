@@ -5,11 +5,12 @@ html, body { background: #FFEEEE; background: -webkit-linear-gradient(to right, 
 p.start_arrow { text-align: center; padding: 0 0 10% 0; }
 img.start_arrow { height: 106px; width: 106px; }
 
-div.neomorphism { border-radius: 24px; padding: 32px; background: #FFEFBA; background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA); background: linear-gradient(to right, #FFFFFF, #FFEFBA); }
-.content { padding: 8px; font-size: 28px; }
-h2.content_text { padding: 0 0 0 24px; }
-
+.content { padding: 16px; font-size: 28px; }
+h2.content_text { padding: 0 0 0 28px; margin: 20px 0; }
+p.content_text { width: 45%; }
 div.table { display: flex; }
+
+div.neomorphism { border-radius: 24px; padding: 32px; background: #FFEFBA; background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA); background: linear-gradient(to right, #FFFFFF, #FFEFBA); }
 div.b { height: 128px; width: 128px; padding: 8px; text-align: center; }
 div.o { box-shadow: 8px 8px 15px #505050, -6px -6px 12px #fff4cf; border-radius: 24px; height: 100%; width: 100%; }
 div.i { box-shadow: 8px 8px 15px 0 #505050 inset, -6px -6px 12px 0 #fff4cf inset; border-radius: 24px; height: 100%; width: 100%; }
