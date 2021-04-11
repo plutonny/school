@@ -3,11 +3,13 @@
 
 html, body { margin: 0; overflow-x: hidden; }
 h1, h2, h3, h4, h5, h6, p, a { font-family: 'Montserrat'; text-decoration: none; color: black; }
+a { transition: 0.5s; }
+a:hover { transition: 0.5s; }
 
 .header { display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
 .header_text { margin: 16px; }
-a.header_text:hover { text-decoration: underline; }
+a.header_text:hover { text-decoration: underline; color: #505050; }
 
 .logo {font-family: 'Comfortaa'; user-select: none; }
-.up {position: absolute; bottom: 100px; }
+.up {position: fixed; bottom: 100px; }
 .void { margin-right: auto; }
