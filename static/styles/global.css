@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap);
 
-html, body { margin: 0; background-color: whitesmoke; overflow-x: hidden; }
+html, body { margin: 0; overflow-x: hidden; }
 h1, h2, h3, h4, h5, h6, p, a { font-family: 'Montserrat'; text-decoration: none; color: black; }
 
 .header { display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
@@ -9,5 +9,5 @@ h1, h2, h3, h4, h5, h6, p, a { font-family: 'Montserrat'; text-decoration: none;
 a.header_text:hover { text-decoration: underline; }
 
 .logo {font-family: 'Comfortaa'; user-select: none; }
-.up {position: absolute; bottom: 50px; }
+.up {position: absolute; bottom: 100px; }
 .void { margin-right: auto; }
