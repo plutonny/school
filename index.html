@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="static/img/index.svg">
-    <link type="text/css" rel="stylesheet" media="all" href="static/styles/global.css">
-    <link type="text/css" rel="stylesheet" media="all" href="static/styles/l_index.css" id="theme-css">
+    <link type="text/css" rel="stylesheet" media="all" href="static/global.css">
+    <link type="text/css" rel="stylesheet" media="all" href="static/l_index.css" id="theme-css">
     <title>Тренды WEB-дизайна</title>
   </head>
   <body>
-    <div class="up"><a href="#start" class="up" style="transform: rotate(180deg); transform-origin: center center; "><img src="static/img/arrow.svg" alt="To start page" height="48px" width="48px"></a></div>
+    <div class="up"><a href="#start" class="up" style="transform: rotate(180deg); transform-origin: center center; fill: currentColor;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve"><path d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937   c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937   c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z"/></svg></a></div>
     <div id="start" class="header">
       <h1 ><a class="logo" href="index.html">WEB</a></h1>
       <div class="void"></div>
@@ -16,11 +16,11 @@
       <a class="header_text" href="#gradients">Градиенты</a>
       <a class="header_text" href="#dark_theme">Темная тема</a>
       <a class="header_text" href="#animations">Анимации</a>
-      <a class="header_text" href="about.html"><b>О разработке</b></a>
+      <b><a class="header_text" href="about.html">О разработке</a></b>
     </div>
     <div class="start">
       <h2 class="start_text">Основные тренды WEB-дизайна</h2>
-      <p class="start_arrow"><img src="static/img/arrow.gif" alt="Go!" class="start_arrow"></p>
+      <p class="start_arrow" style="fill: currentColor;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve"><path d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937   c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937   c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z"/></svg></p>
     </div>
     <div class="content">
       <div id="neomorphism" class="neomorphism">
@@ -76,41 +76,23 @@
       <div id="dark_theme" class="dark_theme">
         <h2 class="content_text">Темная тема.</h2>
         <div class="table">
-          <p class="content_text">Здесь будет текст по темной теме.</p>
+          <p class="content_text"><b>Темная тема</b> помимо модности дает два положительных фактора. Вечером приятне смотреть на темный экран, а не на светлый - <b>забота о пользователе</b>. Так же на экранах OLED черные пиксели потребляют почти не потребляют электричества, в отличии от светлых - <b>экономия батареи</b>.</p>
+          <div class="void"></div>
           <div class="void"></div>
           <table class="buttons">
             <tr>
-              <td><div class="b"><div class="n"></div></div></td>
-              <td><div class="b"><div class="n"></div></div></td>
-              <td><div class="b"><div class="n"></div></div></td>
+              <td class="b"></td>
             </tr>
             <tr>
               <td><div class="b"><div class="n"></div></div></td>
-              <td><div class="b">
-                <div class="y">
-                  <a id="theme-button">
-                    <script>
-                      document.getElementById('theme-button').onclick = function (){ 
-                        if (document.getElementById('theme-css').href.includes('static/styles/l_index.css')) {
-                          document.getElementById('theme-css').href = 'static/styles/d_index.css'; 
-                        } else {
-                        document.getElementById('theme-css').href = 'static/styles/l_index.css';
-                        }
-                      };
-                    </script>
-                    Сменить
-                  </a>
-                </div>
-              </div>
-            </td>
+              <td><div class="b"><a id="theme-button" class="theme-button"><div class="y"><script>document.getElementById('theme-button').onclick = function (){if (document.getElementById('theme-css').href.includes('static/l_index.css')) {document.getElementById('theme-css').href = 'static/d_index.css';} else {document.getElementById('theme-css').href = 'static/l_index.css';}};</script>Сменить</div></a></div></td>
               <td><div class="b"><div class="n"></div></div></td>
             </tr>
             <tr>
-              <td><div class="b"><div class="n"></div></div></td>
-              <td><div class="b"><div class="n"></div></div></td>
-              <td><div class="b"><div class="n"></div></div></td>
+              <td><div class="b"><div class="convoid"></div></div></td>
             </tr>
           </table>
+          <div class="void"></div>
         </div>
       </div>
     </div>

@@ -1,16 +1,9 @@
 html, body { background: #FFEEEE; background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE); background: linear-gradient(to right, #DDEFBB, #FFEEEE); }
+h1, h2, h3, h4, h5, h6, p, a, b, td, div { color: black; }
+a:hover { transition: 0.5s; color: #505050; }
+a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; background-color: #505050; content: ""; transition: width 0.5s ease-out; }
 
-.start { width: 100%; height: 100%; user-select: none; }
-.start_text { font-size: 32px; text-align: center; padding: 15% 0 5% 0; }
-p.start_arrow { text-align: center; padding: 0 0 10% 0; }
-img.start_arrow { height: 106px; width: 106px; }
-
-.content { padding: 18px; font-size: 28px; }
-h2.content_text { padding: 0 28px 0 28px; margin: 20px 0; }
-p.content_text { width: 45%; }
-div.table { display: flex; }
-div.convoid { padding: 18px; }
-div.b { height: 128px; width: 128px; padding: 8px; }
+p.start_arrow { text-align: center; padding: 0 0 10% 0; color: black; }
 
 div.neomorphism { box-shadow: 8px 8px 15px #858585, -6px -6px 12px #fff4cf; border-radius: 24px; padding: 32px 22px 22px 52px; background: #FFEFBA; background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA); background: linear-gradient(to right, #FFFFFF, #FFEFBA); }
 div.o { box-shadow: 8px 8px 15px #505050, -6px -6px 12px #fff4cf; border-radius: 24px; height: 100%; width: 100%; background: #FBD786; }
@@ -21,7 +14,6 @@ div.s { box-shadow: 8px 8px 15px #505050, -6px -6px 12px #fff4cf; border-radius:
 div.f { box-shadow: 8px 8px 15px #505050, -6px -6px 12px #fff4cf; border-radius: 24px; height: 100%; width: 100%; background: #CB356B; background: -webkit-linear-gradient(to right, #BD3F32, #CB356B); background: linear-gradient(to right, #BD3F32, #CB356B); }
 
 div.dark_theme { box-shadow: 8px 8px 15px #858585, -6px -6px 12px #fff4cf; border-radius: 24px; padding: 32px 22px 22px 52px; background: #B79891; background: -webkit-linear-gradient(to right, #94716B, #B79891); background: linear-gradient(to right, #94716B, #B79891); }
-div.n { height: 100%; width: 100%; }
 div.y { transition: 0.5s; user-select: none; box-shadow: 8px 8px 15px #505050, -6px -6px 12px #fff4cf81; border-radius: 24px; width: 100%; background: #94716B; padding: 46% 0% 46% 17%; font-size: 24px; }
 div.y:hover { transition: 0.5s; background: #70504b; }
-div.y::after { transition: 0.5s; }
+a.theme-button, a.theme-button:hover, a.theme-button::after { color: #000 !important; }
