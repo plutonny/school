@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="static/img/index.svg">
-    <link rel="stylesheet" href="static/styles/global.css">
-    <link rel="stylesheet" href="static/styles/index.css">
+    <link type="text/css" rel="stylesheet" media="all" href="static/styles/global.css">
+    <link type="text/css" rel="stylesheet" media="all" href="static/styles/l_index.css" id="theme-css">
     <title>Тренды WEB-дизайна</title>
   </head>
   <body>
@@ -51,8 +51,6 @@
       <div id="gradients" class="gradients">
         <h2 class="content_text">Градиенты.</h2>
         <div class="table">
-          <p class="content_text"><b>Градиент</b> — вид заливки, в которой по заданным параметрам цвета в ключевых точках рассчитывает <b>промежуточные цвета</b> остальных точек. При этом создаются <b>плавные переходы</b> из одного цвета в другой. Обычно в градиенте можно использовать <b>более двух цветов</b> и дополнительно указывать настройки прозрачности и смещения границы цветов.</p>
-          <div class="void"></div>
           <table class="buttons">
             <tr>
               <td><div class="b"><div class="s"></div></div></td>
@@ -68,6 +66,49 @@
               <td><div class="b"><div class="s"></div></div></td>
               <td><div class="b"><div class="f"></div></div></td>
               <td><div class="b"><div class="s"></div></div></td>
+            </tr>
+          </table>
+          <div class="void"></div>
+          <p class="content_text"><b>Градиент</b> — вид заливки, в которой по заданным параметрам цвета в ключевых точках рассчитывает <b>промежуточные цвета</b> остальных точек. При этом создаются <b>плавные переходы</b> из одного цвета в другой. Обычно в градиенте можно использовать <b>более двух цветов</b> и дополнительно указывать настройки прозрачности и смещения границы цветов.</p>
+        </div>
+      </div>
+      <div class="convoid"></div>
+      <div id="dark_theme" class="dark_theme">
+        <h2 class="content_text">Темная тема.</h2>
+        <div class="table">
+          <p class="content_text">Здесь будет текст по темной теме.</p>
+          <div class="void"></div>
+          <table class="buttons">
+            <tr>
+              <td><div class="b"><div class="n"></div></div></td>
+              <td><div class="b"><div class="n"></div></div></td>
+              <td><div class="b"><div class="n"></div></div></td>
+            </tr>
+            <tr>
+              <td><div class="b"><div class="n"></div></div></td>
+              <td><div class="b">
+                <div class="y">
+                  <a id="theme-button">
+                    <script>
+                      document.getElementById('theme-button').onclick = function (){ 
+                        if (document.getElementById('theme-css').href.includes('static/styles/l_index.css')) {
+                          document.getElementById('theme-css').href = 'static/styles/d_index.css'; 
+                        } else {
+                        document.getElementById('theme-css').href = 'static/styles/l_index.css';
+                        }
+                      };
+                    </script>
+                    Сменить
+                  </a>
+                </div>
+              </div>
+            </td>
+              <td><div class="b"><div class="n"></div></div></td>
+            </tr>
+            <tr>
+              <td><div class="b"><div class="n"></div></div></td>
+              <td><div class="b"><div class="n"></div></div></td>
+              <td><div class="b"><div class="n"></div></div></td>
             </tr>
           </table>
         </div>
