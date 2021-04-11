@@ -31,6 +31,6 @@ a:hover:after, a:focus:after { width: 100%; }
 
 .logo {font-family: 'Comfortaa'; user-select: none; }
 .logo:after { height: 2px; }
-.up {position: fixed; bottom: 100px; }
+.up {position: fixed; bottom: 100px; user-select: none; }
 a.up::after { display: none; }
 .void { margin-right: auto; }
