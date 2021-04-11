@@ -3,13 +3,15 @@
 
 html, body { margin: 0; overflow-x: hidden; }
 h1, h2, h3, h4, h5, h6, p, a { font-family: 'Montserrat'; text-decoration: none; color: black; }
-a { transition: 0.5s; }
-a:hover { transition: 0.5s; }
+a { transition: 0.3s; position: relative; cursor: pointer; line-height: 1; text-decoration: none; }
+a:hover { transition: 0.3s; color: #505050; }
+a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; background-color: #505050; content: ""; transition: width 0.3s ease-out; }
+a:hover:after, a:focus:after { width: 100%; }
 
 .header { display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
 .header_text { margin: 16px; }
-a.header_text:hover { text-decoration: underline; color: #505050; }
 
 .logo {font-family: 'Comfortaa'; user-select: none; }
+.logo:after { height: 2px; }
 .up {position: fixed; bottom: 100px; }
 .void { margin-right: auto; }
