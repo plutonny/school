@@ -1,0 +1,10 @@
+html, body { transition: 0.5s; background: #000428; background: -webkit-linear-gradient(to right, #004e92, #000428); background: linear-gradient(to right, #004e92, #000428); }
+h1, h2, h3, h4, h5, h6, p, a, b, td, div { transition: 0.5s; color: whitesmoke; }
+a:hover { transition: 0.5s; color: #c7c7c7; }
+a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; background-color: #c7c7c7; content: ""; transition: width 0.5s ease-out; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #093028; }
+::-webkit-scrollbar-thumb { background: #5f5f5fcc; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #9e9e9ecc; border-radius: 10px; }
+
