@@ -24,7 +24,6 @@ div.y:hover { transition: 0.5s; background: #70504b; }
 a.theme-button, a.theme-button:hover, a.theme-button::after { transition: 0.5s; color: #000 !important; }
 
 div.animations { transition: 0.5s; text-align: right; box-shadow: 8px 8px 10px 0 #85858575 inset, -6px -6px 15px 0 #fff4cf75 inset; border-radius: 24px; padding: 32px 52px 22px 22px; background: #1c92d2; background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2); background: linear-gradient(to left, #f2fcfe, #1c92d2); }
-
 .vk { color: black; }
 .ig { color: black; }
 .gt { color: black; }
