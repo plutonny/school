@@ -51,6 +51,8 @@ div.b { transition: 0.5s; height: 128px; width: 128px; padding: 8px; }
 div.n { transition: 0.5s; height: 100%; width: 100%; }
 td.b { transition: 0.5s; padding: 14% 0% 0% 0%; }
 div.y::after { transition: 0.5s; }
+div.t { height: 100%; width: 100%; animation-name: anim_one; animation-duration: 4s; animation-iteration-count: infinite; }
+div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration: 4s; animation-iteration-count: infinite; }
 
 div.footer { text-align: center; font-size: 26px;}
 .vk::after, .vk:hover { color: #2787F5; }

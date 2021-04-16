@@ -14,7 +14,7 @@ div.o { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 
 div.i { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; height: 100%; width: 100%; background: #5253a8; }
 
 div.gradients { transition: 0.5s; text-align: right; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; padding: 32px 52px 22px 22px; background: #000000; background: -webkit-linear-gradient(to right, #434343, #000000); background: linear-gradient(to right, #434343, #000000); }
-div.s { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset;border-radius: 24px; height: 100%; width: 100%; background: #4f9466; background: -webkit-linear-gradient(to right, #414141, #4f9466); background: linear-gradient(to right, #414141, #4f9466); }
+div.s { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; height: 100%; width: 100%; background: #4f9466; background: -webkit-linear-gradient(to right, #414141, #4f9466); background: linear-gradient(to right, #414141, #4f9466); }
 div.f { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; height: 100%; width: 100%; background: #5253a8; background: -webkit-linear-gradient(to left, #414141, #5253a8); background: linear-gradient(to left, #414141, #5253a8); }
 
 div.dark_theme { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; padding: 32px 22px 22px 52px; background: #1e130c; background: -webkit-linear-gradient(to left, #725e53, #1e130c); background: linear-gradient(to left, #725e53, #1e130c); }
@@ -23,6 +23,20 @@ div.y:hover { transition: 0.5s; background: rgb(80, 57, 54); }
 a.theme-button, a.theme-button:hover, a.theme-button::after { transition: 0.5s; color: #000 !important; }
 
 div.animations { transition: 0.5s; text-align: right; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; padding: 32px 52px 22px 22px; background: #000428; background: -webkit-linear-gradient(to left, #004e92, #000428); background: linear-gradient(to left, #004e92, #000428); }
+@keyframes anim_one {
+    0%   { box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #6441A5; background: -webkit-linear-gradient(to left, #2a0845, #6441A5); background: linear-gradient(to left, #2a0845, #6441A5); }
+    25%  { box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; background: #20002c; background: -webkit-linear-gradient(to right, #a383af, #20002c); background: linear-gradient(to right, #a383af, #20002c); }
+    50%  { box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #948E99; background: -webkit-linear-gradient(to right, #2E1437, #948E99); background: linear-gradient(to right, #2E1437, #948E99); }
+    75%  { box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; background: #6A9113; background: -webkit-linear-gradient(to right, #141517, #6A9113); background: linear-gradient(to right, #141517, #6A9113); }
+    100% { box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #6441A5; background: -webkit-linear-gradient(to left, #2a0845, #6441A5); background: linear-gradient(to left, #2a0845, #6441A5); }
+}
+@keyframes anim_two {
+    0%   { box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; background: #6A9113; background: -webkit-linear-gradient(to right, #141517, #6A9113); background: linear-gradient(to right, #141517, #6A9113); }
+    25%  { box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #948E99; background: -webkit-linear-gradient(to right, #2E1437, #948E99); background: linear-gradient(to right, #2E1437, #948E99); }
+    50%  { box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; background: #20002c; background: -webkit-linear-gradient(to right, #a383af, #20002c); background: linear-gradient(to right, #a383af, #20002c); }
+    75%  { box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #6441A5; background: -webkit-linear-gradient(to left, #2a0845, #6441A5); background: linear-gradient(to left, #2a0845, #6441A5); }
+    100% { box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; background: #6A9113; background: -webkit-linear-gradient(to right, #141517, #6A9113); background: linear-gradient(to right, #141517, #6A9113); }
+}
 
 .vk { color: whitesmoke; }
 .ig { color: whitesmoke; }
