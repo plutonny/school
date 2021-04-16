@@ -1,14 +1,13 @@
-html, body { transition: 0.5s; background: #FFEEEE; background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE); background: linear-gradient(to right, #DDEFBB, #FFEEEE); }
-h1, h2, h3, h4, h5, h6, p, a, b, td, div { transition: 0.5s; color: black; }
-a:hover { transition: 0.5s; color: #505050; }
-a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; background-color: #505050; content: ""; transition: width 0.5s ease-out; }
+html, body { background: #FFEEEE; background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE); background: linear-gradient(to right, #DDEFBB, #FFEEEE); }
+h1, h2, h3, h4, h5, h6, p, a, b, td, div { color: black; }
+a:hover { color: #505050; }
+a:after { background-color: #505050; }
 
-::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #FFEEEE; }
-::-webkit-scrollbar-thumb { background: #adad9bcc; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #d8d8c8cc; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #adad9bcc; }
+::-webkit-scrollbar-thumb:hover { background: #d8d8c8cc; }
 
-p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; color: black; }
+p.start_arrow { color: black; }
 
 div.neomorphism { transition: 0.5s; box-shadow: 8px 8px 15px #858585, -6px -6px 12px #fff4cf; border-radius: 24px; padding: 32px 22px 22px 52px; background: #FFEFBA; background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA); background: linear-gradient(to right, #FFFFFF, #FFEFBA); }
 div.o { transition: 0.5s; box-shadow: 8px 8px 15px #505050, -6px -6px 12px #fff4cf; border-radius: 24px; height: 100%; width: 100%; background: #FBD786; }
@@ -24,6 +23,7 @@ div.y:hover { transition: 0.5s; background: #70504b; }
 a.theme-button, a.theme-button:hover, a.theme-button::after { transition: 0.5s; color: #000 !important; }
 
 div.animations { transition: 0.5s; text-align: right; box-shadow: 8px 8px 10px 0 #85858575 inset, -6px -6px 15px 0 #fff4cf75 inset; border-radius: 24px; padding: 32px 52px 22px 22px; background: #1c92d2; background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2); background: linear-gradient(to left, #f2fcfe, #1c92d2); }
+
 .vk { color: black; }
 .ig { color: black; }
 .gt { color: black; }

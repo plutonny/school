@@ -14,11 +14,18 @@
 
 /* for all pages */
 
-html, body { margin: 0; overflow-x: hidden; transition: 0.5s; }
-h1, h2, h3, h4, h5, h6, p, a, b, td, div { font-family: 'Montserrat'; text-decoration: none; transition: 0.5s; }
+html, body { transition: 0.5s; margin: 0; overflow-x: hidden; transition: 0.5s; }
+h1, h2, h3, h4, h5, h6, p, a, b, td, div { transition: 0.5s; font-family: 'Montserrat'; text-decoration: none; transition: 0.5s; }
 a { transition: 0.5s; position: relative; cursor: pointer; line-height: 1; text-decoration: none; }
+a:hover { transition: 0.5s; }
+a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; content: ""; transition: width 0.5s ease-out; }
+a:hover:after, a:focus:after { transition: 0.5s; width: 100%; }
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, b::selection, td::selection, div::selection, svg::selection { background-color: #85858585; }
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, b::-moz-selection, td::-moz-selection, div::-moz-selection, svg::-moz-selection { background-color: #85858585; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { border-radius: 10px; }
 
 .header { transition: 0.5s; overflow: hidden; display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
 .header_text { transition: 0.5s; margin: 16px; }
@@ -32,10 +39,10 @@ div.convoid { transition: 0.5s; padding: 18px; }
 
 /* for index.html */
 
-a:hover:after, a:focus:after { transition: 0.5s; width: 100%; }
-.start { transition: 0.5s; width: 100%; height: 100%; user-select: none; }
-.start_text { transition: 0.5s; font-size: 32px; text-align: center; padding: 15% 0 5% 0; }
-img.start_arrow { transition: 0.5s; height: 106px; width: 106px; }
+.start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
+.start_text { transition: 0.5s; font-size: 32px; text-align: center; }
+p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
+
 .content { transition: 0.5s; padding: 18px; font-size: 28px; }
 h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
 p.content_text { transition: 0.5s; width: 45%; }
@@ -44,6 +51,7 @@ div.b { transition: 0.5s; height: 128px; width: 128px; padding: 8px; }
 div.n { transition: 0.5s; height: 100%; width: 100%; }
 td.b { transition: 0.5s; padding: 14% 0% 0% 0%; }
 div.y::after { transition: 0.5s; }
+
 div.footer { text-align: center; font-size: 26px;}
 .vk::after, .vk:hover { color: #2787F5; }
 .ig::after, .ig:hover { color: #845ec2; }
