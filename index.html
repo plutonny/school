@@ -6,6 +6,13 @@
     <link type="text/css" rel="stylesheet" media="all" href="static/global.css">
     <link type="text/css" rel="stylesheet" media="all" href="static/lightcss/index.css" id="theme-css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script>
+      if (localStorage.getItem("theme").includes('dark')) {
+            document.getElementById('theme-css').href = 'static/darkcss/index.css';
+        } else {
+            document.getElementById('theme-css').href = 'static/lightcss/index.css';
+        }
+    </script>
     <title>Тренды WEB-дизайна</title>
   </head>
   <body>
@@ -101,7 +108,26 @@
             </tr>
             <tr>
               <td><div class="b"><div class="n"></div></div></td>
-              <td><div class="b"><a id="theme-button" class="theme-button"><div class="y"><script>document.getElementById('theme-button').onclick = function (){if (document.getElementById('theme-css').href.includes('static/lightcss/index.css')) {document.getElementById('theme-css').href = 'static/darkcss/index.css';} else {document.getElementById('theme-css').href = 'static/lightcss/index.css';}};</script>Сменить</div></a></div></td>
+              <td>
+                <div class="b">
+                  <a id="theme-button" class="theme-button">
+                    <div class="y">
+                      <script>
+                        document.getElementById('theme-button').onclick = function () {
+                          if (document.getElementById('theme-css').href.includes('static/lightcss/index.css')) {
+                            document.getElementById('theme-css').href = 'static/darkcss/index.css';
+                            localStorage.setItem("theme","dark");
+                          } else {
+                            document.getElementById('theme-css').href = 'static/lightcss/index.css';
+                            localStorage.setItem("theme","light");
+                          }
+                        };
+                      </script>
+                    Сменить
+                    </div>
+                  </a>
+                </div>
+              </td>
               <td><div class="b"><div class="n"></div></div></td>
             </tr>
             <tr>

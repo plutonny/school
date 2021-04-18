@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
-      <link rel="icon" href="static/about.svg">
-      <link type="text/css" rel="stylesheet" media="all" href="static/global.css">
-      <link type="text/css" rel="stylesheet" media="all" href="static/lightcss/about.css" id="theme-css">
-      <title>О разработке</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="static/about.svg">
+    <link type="text/css" rel="stylesheet" media="all" href="static/global.css">
+    <link type="text/css" rel="stylesheet" media="all" href="static/lightcss/about.css" id="theme-css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script>
+      if (localStorage.getItem("theme").includes('dark')) {
+            document.getElementById('theme-css').href = 'static/darkcss/about.css';
+        } else {
+            document.getElementById('theme-css').href = 'static/lightcss/about.css';
+        }
+    </script>
+    <title>О разработке</title>
   </head>
   <body>
     
@@ -14,7 +22,19 @@
       <h1 style="padding: 10px 0 16px 16px;"> • </h1>
       <a class="about_header_text" href="about.html"><b>О разработке</b></a>
       <div class="hvoid"></div>
-      <a id="theme-button" class="cht"><script>document.getElementById('theme-button').onclick = function (){if (document.getElementById('theme-css').href.includes('static/lightcss/about.css')) {document.getElementById('theme-css').href = 'static/darkcss/about.css';} else {document.getElementById('theme-css').href = 'static/lightcss/about.css';}};</script>Сменить тему</a>
+      <a id="theme-button" class="cht">
+        <script>
+          document.getElementById('theme-button').onclick = function () {
+            if (document.getElementById('theme-css').href.includes('static/lightcss/about.css')) {
+              document.getElementById('theme-css').href = 'static/darkcss/about.css';
+              localStorage.setItem("theme","dark");
+            } else {
+              document.getElementById('theme-css').href = 'static/lightcss/about.css';
+              localStorage.setItem("theme","light");
+            }
+          };
+        </script>
+      Сменить тему</a>
     </div>
 
     <div class="block_social">
