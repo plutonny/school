@@ -16,15 +16,36 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 ::-webkit-scrollbar-thumb { border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { border-radius: 10px; }
 
+/* to logos social */
+.vk::after, .vk:hover { color: #2787F5; }
+.ig::after, .ig:hover { color: #845ec2; }
+.gt::after, .gt:hover { color: #858585; }
+.tg::after, .tg:hover { color: #32afed; }
+a.vk::after { display: none; }
+a.ig::after { display: none; }
+a.gt::after { display: none; }
+a.tg::after { display: none; }
+
 @media (min-width: 481px) { /* global PC */
     /* hyperlink decoration */
     a:hover { transition: 0.5s; }
     a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; content: ""; transition: width 0.5s ease-out; }
     a:hover:after, a:focus:after { transition: 0.5s; width: 100%; }
+} @media (max-width: 480px) { /* global MOBILE */
+    
+}
 
+/* STYLES TO INDEX.HTML */
+div.y::after { transition: 0.5s; } /* for theme buttons */
+div.t { height: 100%; width: 100%; animation-name: anim_one; animation-duration: 4s; animation-iteration-count: infinite; }
+div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration: 4s; animation-iteration-count: infinite; }
+
+@media (min-width: 721px) { /* PC */
     /* styles for header, logo and 'up' button */
     .header { transition: 0.5s; overflow: hidden; display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
     .header_text { transition: 0.5s; margin: 16px; }
+    div.hvoid { transition: 0.5s; margin-right: auto; }
+    .toa { transition: 0.5s; margin: 16px; }
     .logo { transition: 0.5s; font-family: 'Comfortaa'; user-select: none; }
     .logo:after { transition: 0.5s; height: 2px; }
     .up { transition: 0.5s; position: fixed; bottom: 100px; user-select: none; }
@@ -36,25 +57,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
     /* styles to social buttons */
     .svgi { fill: currentColor; height: 48px; width: 48px; }
-    .vk::after, .vk:hover { color: #2787F5; }
-    .ig::after, .ig:hover { color: #845ec2; }
-    .gt::after, .gt:hover { color: #858585; }
-    .tg::after, .tg:hover { color: #32afed; }
-    a.vk::after { display: none; }
-    a.ig::after { display: none; }
-    a.gt::after { display: none; }
-    a.tg::after { display: none; }
     a.a { padding: 28px; }
-} @media (max-width: 480px) { /* global MOBILE */
-    
-}
 
-/* STYLES TO INDEX.HTML */
-div.y::after { transition: 0.5s; } /* for theme buttons */
-div.t { height: 100%; width: 100%; animation-name: anim_one; animation-duration: 4s; animation-iteration-count: infinite; }
-div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration: 4s; animation-iteration-count: infinite; }
-
-@media (min-width: 721px) { /* PC */
+    /* content */
     .start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
     .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
     p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
@@ -65,9 +70,60 @@ div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration:
     td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
     div.footer { text-align: center; font-size: 26px;}
 } @media (min-width: 481px) and (max-width: 720px) { /* MIDDLE */
-    
-} @media (max-width: 480px) { /* MOBILE */
+    /* styles for header, logo and 'up' button */
+    .header { transition: 0.5s; overflow: hidden; display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
+    .header_text { display: none; }
+    div.hvoid { transition: 0.5s; margin-right: auto; }
+    .toa { transition: 0.5s; margin: 16px; }
+    .logo { transition: 0.5s; font-family: 'Comfortaa'; user-select: none; }
+    .logo:after { transition: 0.5s; height: 2px; }
+    .up { transition: 0.5s; position: fixed; bottom: 100px; user-select: none; }
+    a.up::after { transition: 0.5s; display: none; }
 
+    /* special styles to create empty zones */
+    div.void { transition: 0.5s; margin-right: auto; }
+    div.convoid { transition: 0.5s; padding: 18px; }
+
+    /* styles to social buttons */
+    .svgi { fill: currentColor; height: 48px; width: 48px; }
+    a.a { padding: 28px; }
+
+    /* content */
+    .start { transition: 0.5s; height: 100%; user-select: none; padding: 30% 0 20% 0; }
+    .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
+    p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
+    .content { transition: 0.5s; padding: 18px; }
+    h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
+    p.content_text { transition: 0.5s; width: 45%; }
+    div.table { transition: 0.5s; display: flex; } /* tables examples */
+    td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
+    div.footer { text-align: center; font-size: 26px;}
+} @media (max-width: 480px) { /* MOBILE */
+    .header_text, .toa, .hvoid, a.a { display: none; }
+
+    /* styles for header, logo and 'up' button */
+    .header { transition: 0.5s; overflow: hidden; display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; justify-content: center; }
+    
+    .logo { transition: 0.5s; font-family: 'Comfortaa'; user-select: none; }
+    .logo:after { transition: 0.5s; height: 2px; }
+    .up { transition: 0.5s; position: fixed; bottom: 100px; user-select: none; }
+    a.up::after { transition: 0.5s; display: none; }
+
+    /* special styles to create empty zones */
+    div.void { transition: 0.5s; margin-right: auto; }
+    div.convoid { transition: 0.5s; padding: 18px; }
+
+    /* content */
+    .start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
+    .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
+    p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
+    .content { transition: 0.5s; padding: 18px; }
+    h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
+    p.content_text { transition: 0.5s; width: 45%; }
+    div.table { transition: 0.5s; display: flex; } /* tables examples */
+    td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
+    .ftoa { font-size: 28px; }
+    div.footer { text-align: center; font-size: 26px;}
 }
 /* table examples size */
 @media (min-width: 1001px) { 
