@@ -58,7 +58,7 @@ a.a { padding: 28px; }
     .mobilecss {display: none;}
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .start, .content, .footer, .header {display: none;}
     .mobilecss {display: block;}
 }
