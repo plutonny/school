@@ -11,17 +11,6 @@ a { transition: 0.5s; position: relative; cursor: pointer; line-height: 1; text-
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, b::selection, td::selection, div::selection, svg::selection, li::selection { background-color: #85858585; }
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, b::-moz-selection, td::-moz-selection, div::-moz-selection, svg::-moz-selection, li::-moz-selection { background-color: #85858585; }
 
-/* scrollbar only for Chrome and Safari browsers, don't working on other browsers */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-thumb { border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { border-radius: 10px; }
-
-@media (min-width: 801px) { /* global PC */
-    a:hover { transition: 0.5s; }
-    a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; content: ""; transition: width 0.5s ease-out; }
-    a:hover:after, a:focus:after { transition: 0.5s; width: 100%; }
-}
-
 /* styles for header, logo and 'up' button */
 .header { transition: 0.5s; overflow: hidden; display: flex; height: 35px; padding: 12px; align-items: center; user-select: none; }
 .header_text { transition: 0.5s; margin: 16px; }
@@ -47,25 +36,6 @@ a.tg::after { display: none; }
 a.a { padding: 28px; }
 
 /* STYLES TO INDEX.HTML */
-@media screen { /* index.html PC */
-    .start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
-    .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
-    p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
-    .content { transition: 0.5s; padding: 18px; }
-    h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
-    p.content_text { transition: 0.5s; width: 45%; }
-    div.footer { text-align: center; font-size: 26px;}
-}
-
-@media handheld { /* index.html MOBILE */
-    body {display: none i !important;}
-    div.footer { text-align: center; font-size: 20px;}
-}
-
-/* table examples size */
-@media (min-width: 1001px) { div.b { transition: 0.5s; height: 128px; width: 128px; padding: 8px; } div.y { font-size: 24px; } .content { font-size: 28px; } }
-@media (max-width: 1000px) { div.b { transition: 0.5s; height: 100px; width: 100px; padding: 8px; } div.y { font-size: 18px; } .content { font-size: 20px; } }
-
 /* for example tables */
 div.table { transition: 0.5s; display: flex; } /* tables examples */
 div.t { height: 100%; width: 100%; animation-name: anim_one; animation-duration: 4s; animation-iteration-count: infinite; }
