@@ -16,7 +16,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 ::-webkit-scrollbar-thumb { border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { border-radius: 10px; }
 
-@media (min-width: 801px) { /* global PC */
+@media (min-width: 681px) { /* global PC */
     a:hover { transition: 0.5s; }
     a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; content: ""; transition: width 0.5s ease-out; }
     a:hover:after, a:focus:after { transition: 0.5s; width: 100%; }
@@ -47,7 +47,7 @@ a.tg::after { display: none; }
 a.a { padding: 28px; }
 
 /* STYLES TO INDEX.HTML */
-@media (min-width: 681px) {
+@media (min-width: 801px) {
     .start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
     .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
     p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
@@ -58,7 +58,7 @@ a.a { padding: 28px; }
     .mobilecss {display: none;}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 800px) {
     .start, .content, .footer, .header {display: none;}
     .mobilecss {display: block;}
 }
