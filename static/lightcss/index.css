@@ -42,4 +42,4 @@ div.animations { transition: 0.5s; text-align: right; box-shadow: 8px 8px 10px 0
 .ig { color: black; }
 .gt { color: black; }
 .tg { color: black; }
-div.footer { transition: 0.5s; box-shadow: -8px -8px 12px #b6b6b69d; border-radius: 24px 24px 0px 0px; background: #a1ffce99; background: -webkit-linear-gradient(to right, #FAFFD199, #A1FFCE99); background: linear-gradient(to right, #FAFFD199, #A1FFCE99); }
+div.footer { transition: 0.5s; box-shadow: -8px -8px 12px #b6b6b69d; border-radius: 24px 24px 0px 0px; background: #DAD299; background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299); background: linear-gradient(to right, #B0DAB9, #DAD299); }
