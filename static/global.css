@@ -63,7 +63,7 @@ a.a { padding: 28px; }
     .mobilecss {display: block;}
 }
 
-@media (max-width:480) {
+@media (max-width: 480px) {
     .mobilecss {display: block;}
 }
 
