@@ -15,13 +15,13 @@
 /* for all pages */
 
 html, body { transition: 0.5s; margin: 0; overflow-x: hidden; transition: 0.5s; }
-h1, h2, h3, h4, h5, h6, p, a, b, td, div { transition: 0.5s; font-family: 'Montserrat'; text-decoration: none; transition: 0.5s; }
+h1, h2, h3, h4, h5, h6, p, a, b, td, div, li { transition: 0.5s; font-family: 'Montserrat'; text-decoration: none; transition: 0.5s; }
 a { transition: 0.5s; position: relative; cursor: pointer; line-height: 1; text-decoration: none; }
 a:hover { transition: 0.5s; }
 a:after { display: block; position: absolute; left: 0; width: 0; height: 1px; content: ""; transition: width 0.5s ease-out; }
 a:hover:after, a:focus:after { transition: 0.5s; width: 100%; }
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, b::selection, td::selection, div::selection, svg::selection { background-color: #85858585; }
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, b::-moz-selection, td::-moz-selection, div::-moz-selection, svg::-moz-selection { background-color: #85858585; }
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, b::selection, td::selection, div::selection, svg::selection, li::selection { background-color: #85858585; }
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, b::-moz-selection, td::-moz-selection, div::-moz-selection, svg::-moz-selection, li::-moz-selection { background-color: #85858585; }
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-thumb { border-radius: 10px; }
@@ -69,6 +69,8 @@ a.a { padding: 28px; }
 
 .cht { margin: 0 10px 0 0; }
 .block_social { position: fixed; right: 0; top: 20%; bottom: 20%; display: flex; flex-direction: column; }
+.about { display: flex; flex-wrap: wrap; }
+.ba { padding: 30px; }
 .about_t { padding: 0 0 0 15px; font-size: 28px; }
 .about_m { padding: 0 0 0 40px; font-size: 18px; }
 .about_u { padding: 0 0 0 60px; font-size: 18px; }

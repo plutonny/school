@@ -1,5 +1,5 @@
 html, body { background: #E0EAFC; background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); background: linear-gradient(to right, #CFDEF3, #E0EAFC); }
-h1, h2, h3, h4, h5, h6, p, a, b, td, div { color: black; }
+h1, h2, h3, h4, h5, h6, p, a, b, td, div, li { color: black; }
 a:hover { color: #505050; }
 a:after { background-color: #505050; }
 
