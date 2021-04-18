@@ -1,4 +1,9 @@
-html, body { background: #000428; background: -webkit-linear-gradient(to right, #004e92, #000428); background: linear-gradient(to right, #004e92, #000428); }
+@media (min-width: 481px) {
+    html, body { background: #000428; background: -webkit-linear-gradient(to right, #004e92, #000428); background: linear-gradient(to right, #004e92, #000428); }
+} @media (max-width: 480px) {
+    html, body { background: #000428; background: -webkit-linear-gradient(to top, #004e92, #000428); background: linear-gradient(to top, #004e92, #000428); }
+}
+
 h1, h2, h3, h4, h5, h6, p, a, b, td, div, li { color: whitesmoke; }
 a:hover { color: #c7c7c7; }
 a:after { background-color: #c7c7c7; }

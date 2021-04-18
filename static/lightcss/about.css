@@ -1,4 +1,9 @@
-html, body { background: #83a4d4; background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4); background: linear-gradient(to left, #b6fbff, #83a4d4); }
+@media (min-width: 481px) {
+    html, body { background: #83a4d4; background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4); background: linear-gradient(to left, #b6fbff, #83a4d4); }
+} @media (max-width: 480px) {
+    html, body { background: #83a4d4; background: -webkit-linear-gradient(to top, #b6fbff, #83a4d4); background: linear-gradient(to top, #b6fbff, #83a4d4); }
+}
+
 h1, h2, h3, h4, h5, h6, p, a, b, td, div, li { color: black; }
 a:hover { color: #505050; }
 a:after { background-color: #505050; }

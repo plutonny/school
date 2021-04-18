@@ -1,4 +1,17 @@
-html, body { background: #093028; background: -webkit-linear-gradient(to right, #237A57, #093028); background: linear-gradient(to right, #237A57, #093028); }
+@media (min-width: 481px) {
+    div.animations { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #000428; background: -webkit-linear-gradient(to left, #004e92, #000428); background: linear-gradient(to left, #004e92, #000428); }
+    div.dark_theme { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; background: #1e130c; background: -webkit-linear-gradient(to left, #2e2a28, #1e130c); background: linear-gradient(to left, #2e2a28, #1e130c); }
+    div.gradients { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #000000; background: -webkit-linear-gradient(to right, #434343, #000000); background: linear-gradient(to right, #434343, #000000); }
+    div.neomorphism { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; background: #0F2027; background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); background: linear-gradient(to right, #2C5364, #203A43, #0F2027); }
+    html, body { background: #093028; background: -webkit-linear-gradient(to right, #237A57, #093028); background: linear-gradient(to right, #237A57, #093028); }
+} @media (max-width: 480px) {
+    div.animations { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #000428; background: -webkit-linear-gradient(to top, #004e92, #000428); background: linear-gradient(to top, #004e92, #000428); }
+    div.dark_theme { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; background: #1e130c; background: -webkit-linear-gradient(to top, #2e2a28, #1e130c); background: linear-gradient(to top, #2e2a28, #1e130c); }
+    div.gradients { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #000000; background: -webkit-linear-gradient(to top, #434343, #000000); background: linear-gradient(to top, #434343, #000000); }
+    div.neomorphism { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; background: #0F2027; background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027); background: linear-gradient(to top, #2C5364, #203A43, #0F2027); }
+    html, body { background: #093028; background: -webkit-linear-gradient(to top, #237A57, #093028); background: linear-gradient(to top, #237A57, #093028); }
+}
+
 h1, h2, h3, h4, h5, h6, p, a, b, td, div { color: whitesmoke; }
 a:hover { color: #c7c7c7; }
 a:after { background-color: #c7c7c7; }
@@ -9,20 +22,16 @@ a:after { background-color: #c7c7c7; }
 
 p.start_arrow { color: whitesmoke; }
 
-div.neomorphism { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; background: #0F2027; background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); background: linear-gradient(to right, #2C5364, #203A43, #0F2027); }
 div.o { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; height: 100%; width: 100%; background: #4f9466; }
 div.i { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; height: 100%; width: 100%; background: #5253a8; }
 
-div.gradients { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #000000; background: -webkit-linear-gradient(to right, #434343, #000000); background: linear-gradient(to right, #434343, #000000); }
 div.s { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; height: 100%; width: 100%; background: #4f9466; background: -webkit-linear-gradient(to right, #414141, #4f9466); background: linear-gradient(to right, #414141, #4f9466); }
 div.f { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; height: 100%; width: 100%; background: #5253a8; background: -webkit-linear-gradient(to left, #414141, #5253a8); background: linear-gradient(to left, #414141, #5253a8); }
 
-div.dark_theme { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; background: #1e130c; background: -webkit-linear-gradient(to left, #2e2a28, #1e130c); background: linear-gradient(to left, #2e2a28, #1e130c); }
 div.y { transition: 0.5s; user-select: none; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; width: 100%; background: #43352c; padding: 46% 0% 46% 17%; }
 div.y:hover { transition: 0.5s; background: rgb(80, 57, 54); }
 a.theme-button, a.theme-button:hover, a.theme-button::after { transition: 0.5s; color: #000 !important; }
 
-div.animations { transition: 0.5s; box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #000428; background: -webkit-linear-gradient(to left, #004e92, #000428); background: linear-gradient(to left, #004e92, #000428); }
 @keyframes anim_one {
     0%   { box-shadow: 8px 8px 15px #232323, -6px -6px 12px #404040; border-radius: 24px; background: #6441A5; background: -webkit-linear-gradient(to left, #2a0845, #6441A5); background: linear-gradient(to left, #2a0845, #6441A5); }
     25%  { box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; background: #20002c; background: -webkit-linear-gradient(to right, #a383af, #20002c); background: linear-gradient(to right, #a383af, #20002c); }
