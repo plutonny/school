@@ -6,3 +6,5 @@ a:after { background-color: #505050; }
 ::-webkit-scrollbar-track { background: #b6fbff; }
 ::-webkit-scrollbar-thumb { background: #adadabcc; }
 ::-webkit-scrollbar-thumb:hover { background: #a0a0a0cc; }
+
+.mobile_block_social { transition: 0.5s; box-shadow: -8px -8px 12px #b6b6b69d; border-radius: 24px 24px 0px 0px; background: #9796f0; background: -webkit-linear-gradient(to left, #fbc7d4, #9796f0); background: linear-gradient(to left, #fbc7d4, #9796f0); }
