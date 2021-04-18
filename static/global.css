@@ -47,7 +47,7 @@ a.tg::after { display: none; }
 a.a { padding: 28px; }
 
 /* STYLES TO INDEX.HTML */
-@media (min-width: 381px) {
+@media (min-width: 401px) {
     .start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
     .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
     p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
@@ -58,7 +58,7 @@ a.a { padding: 28px; }
     .mobilecss {display: none;}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     .start, .content, .footer, .header {display: none;}
     .mobilecss {display: block;}
 }
