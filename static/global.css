@@ -37,6 +37,10 @@ a.tg::after { display: none; }
 div.y::after { transition: 0.5s; } /* for theme buttons */
 div.t { height: 100%; width: 100%; animation-name: anim_one; animation-duration: 4s; animation-iteration-count: infinite; }
 div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration: 4s; animation-iteration-count: infinite; }
+div.footer { text-align: center; font-size: 26px;}
+.start_text { transition: 0.5s; font-size: 32px; text-align: center; }
+p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
+td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
 
 @media (min-width: 721px) { /* PC */
     /* styles for header, logo and 'up' button */
@@ -59,17 +63,13 @@ div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration:
 
     /* content */
     .start { transition: 0.5s; height: 100%; user-select: none; }
-    .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
-    p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
     .content { transition: 0.5s; padding: 18px; }
     h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
     p.content_text { transition: 0.5s; width: 45%; }
     div.table { transition: 0.5s; display: flex; } /* tables examples */
-    td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
     .neomorphism, .dark_theme { padding: 32px 22px 22px 52px; }
     .gradients, .animations { text-align: right; padding: 32px 52px 22px 22px; }
     .ftoa { display: none; }
-    div.footer { text-align: center; font-size: 26px;}
 
 } @media (min-width: 481px) and (max-width: 720px) { /* MIDDLE */
     /* styles for header, logo and 'up' button */
@@ -92,17 +92,13 @@ div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration:
 
     /* content */
     .start { transition: 0.5s; height: 100%; user-select: none; padding: 30% 0 20% 0; }
-    .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
-    p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
     .content { transition: 0.5s; padding: 18px; display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; }
     h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
     p.content_text { transition: 0.5s; width: 70%; }
     div.table { transition: 0.5s; display: flex; flex-direction: column; flex-wrap: wrap; align-content: center; align-items: center; } /* tables examples */
-    td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
     .gradients, .animations, .neomorphism, .dark_theme { text-align: center; max-width: 75%; align-items: center; padding-bottom: 22px; }
     .y { text-align: left; }
     .ftoa { display: none; }
-    div.footer { text-align: center; font-size: 26px;}
 
 } @media (max-width: 480px) { /* MOBILE */
     .header_text, .toa, .hvoid, a.a { display: none; }
@@ -124,17 +120,13 @@ div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration:
 
     /* content */
     .start { transition: 0.5s; height: 100%; user-select: none; padding: 40% 0 25% 0 !important; }
-    .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
-    p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
     .content { transition: 0.5s; padding: 18px; display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; }
     h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
     p.content_text { transition: 0.5s; width: 70%; }
     div.table { transition: 0.5s; display: flex; flex-direction: column; flex-wrap: wrap; align-content: center; align-items: center; } /* tables examples */
-    td.b { transition: 0.5s; padding: 14% 0% 0% 0%; } /* for all examples */
     .gradients, .animations, .neomorphism, .dark_theme { text-align: center; max-width: 95%; align-items: center; padding-bottom: 22px; }
     .y { text-align: left; }
     .ftoa { font-size: 28px; }
-    div.footer { text-align: center; font-size: 26px;}
 }
 
 /* table examples size */
@@ -151,11 +143,20 @@ div.z { height: 100%; width: 100%; animation-name: anim_two; animation-duration:
 }
 
 /*          STYLES TO ABOUT.HTML          */
-/* NEED TO EDIT */
 .about { display: flex; flex-wrap: wrap; justify-content: flex-start; }
-.ba { padding: 30px; } /* blocks information */
-.about_t { padding: 0 0 0 15px; font-size: 28px; }
-.about_m { padding: 0 0 0 40px; font-size: 18px; }
-.about_u { padding: 0 0 0 60px; font-size: 18px; }
-.cht { margin: 0 10px 0 0; } /* theme button */
+.about_header_text { transition: 0.5s; margin: 16px; }
 .block_social { position: fixed; right: 0; top: 20%; bottom: 20%; display: flex; flex-direction: column; }
+
+@media (min-width: 481px) {
+    .ba { padding: 30px; } /* blocks information */
+    .about_t { padding: 0 0 0 15px; font-size: 28px; }
+    .about_m { padding: 0 0 0 40px; font-size: 18px; }
+    .about_u { padding: 0 0 0 60px; font-size: 18px; }
+    .cht { margin: 0 10px 0 0; } /* theme button */
+} @media (max-width: 480px) {
+    .ba { padding: 30px; } /* blocks information */
+    .about_t { padding: 0 0 0 15px; font-size: 28px; }
+    .about_m { padding: 0 0 0 40px; font-size: 18px; }
+    .about_u { padding: 0 0 0 60px; font-size: 18px; }
+    .cht { display: none; } /* theme button */
+}
