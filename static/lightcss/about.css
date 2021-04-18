@@ -1,8 +1,8 @@
-html, body { background: #E0EAFC; background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); background: linear-gradient(to right, #CFDEF3, #E0EAFC); }
+html, body { background: #83a4d4; background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4); background: linear-gradient(to left, #b6fbff, #83a4d4); }
 h1, h2, h3, h4, h5, h6, p, a, b, td, div, li { color: black; }
 a:hover { color: #505050; }
 a:after { background-color: #505050; }
 
-::-webkit-scrollbar-track { background: #E0EAFC; }
-::-webkit-scrollbar-thumb { background: #adad9bcc; }
-::-webkit-scrollbar-thumb:hover { background: #d8d8c8cc; }
+::-webkit-scrollbar-track { background: #b6fbff; }
+::-webkit-scrollbar-thumb { background: #adadabcc; }
+::-webkit-scrollbar-thumb:hover { background: #a0a0a0cc; }
