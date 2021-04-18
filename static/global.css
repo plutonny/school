@@ -58,9 +58,11 @@ div.footer { text-align: center; font-size: 26px;}
 .vk::after, .vk:hover { color: #2787F5; }
 .ig::after, .ig:hover { color: #845ec2; }
 .gt::after, .gt:hover { color: #858585; }
+.tg::after, .tg:hover { color: #32afed; }
 a.vk::after { display: none; }
 a.ig::after { display: none; }
 a.gt::after { display: none; }
+a.tg::after { display: none; }
 a.a { padding: 28px; }
 
 /* for about.html  */

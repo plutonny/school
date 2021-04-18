@@ -17,7 +17,7 @@ div.gradients { transition: 0.5s; text-align: right; box-shadow: 8px 8px 15px #2
 div.s { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; height: 100%; width: 100%; background: #4f9466; background: -webkit-linear-gradient(to right, #414141, #4f9466); background: linear-gradient(to right, #414141, #4f9466); }
 div.f { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; height: 100%; width: 100%; background: #5253a8; background: -webkit-linear-gradient(to left, #414141, #5253a8); background: linear-gradient(to left, #414141, #5253a8); }
 
-div.dark_theme { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; padding: 32px 22px 22px 52px; background: #1e130c; background: -webkit-linear-gradient(to left, #725e53, #1e130c); background: linear-gradient(to left, #725e53, #1e130c); }
+div.dark_theme { transition: 0.5s; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; border-radius: 24px; padding: 32px 22px 22px 52px; background: #1e130c; background: -webkit-linear-gradient(to left, #2e2a28, #1e130c); background: linear-gradient(to left, #2e2a28, #1e130c); }
 div.y { transition: 0.5s; user-select: none; box-shadow: 8px 8px 10px 0 #23232399 inset, -6px -6px 15px 0 #40404099 inset; border-radius: 24px; width: 100%; background: #43352c; padding: 46% 0% 46% 17%; font-size: 24px; }
 div.y:hover { transition: 0.5s; background: rgb(80, 57, 54); }
 a.theme-button, a.theme-button:hover, a.theme-button::after { transition: 0.5s; color: #000 !important; }
@@ -41,4 +41,5 @@ div.animations { transition: 0.5s; text-align: right; box-shadow: 8px 8px 15px #
 .vk { color: whitesmoke; }
 .ig { color: whitesmoke; }
 .gt { color: whitesmoke; }
+.tg { color: whitesmoke; }
 div.footer { transition: 0.5s; box-shadow: -8px -8px 12px #3c3c3c9d; border-radius: 24px 24px 0px 0px; background: #0F2027; background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); background: linear-gradient(to right, #2C5364, #203A43, #0F2027); }
