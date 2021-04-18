@@ -47,7 +47,7 @@ a.tg::after { display: none; }
 a.a { padding: 28px; }
 
 /* STYLES TO INDEX.HTML */
-@media (min-width: 801px) { /* index.html PC */
+@media screen { /* index.html PC */
     .start { transition: 0.5s; height: 100%; user-select: none; padding: 15% 0 5% 0; }
     .start_text { transition: 0.5s; font-size: 32px; text-align: center; }
     p.start_arrow { transition: 0.5s; text-align: center; padding: 0 0 10% 0; }
@@ -57,7 +57,8 @@ a.a { padding: 28px; }
     div.footer { text-align: center; font-size: 26px;}
 }
 
-@media (max-width: 800px) { /* index.html MOBILE */
+@media handheld { /* index.html MOBILE */
+    body {display: none i !important;}
     div.footer { text-align: center; font-size: 20px;}
 }
 
