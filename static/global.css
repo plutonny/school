@@ -55,10 +55,12 @@ a.a { padding: 28px; }
     h2.content_text { transition: 0.5s; padding: 0 28px 0 28px; margin: 20px 0; }
     p.content_text { transition: 0.5s; width: 45%; }
     div.footer { text-align: center; font-size: 26px;}
+    .mobilecss {display: none;}
 }
 
 @media (max-width: 680px) {
-    body {display: none;}
+    .start, .content, .footer, .header {display: none;}
+    .mobilecss {display: block;}
 }
 
 /* table examples size */
